@@ -1,43 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Ejercicio Formulario</title>
-    <style>
-        form {
-            display: block;
-            margin-top: 0em;
-        }
-    </style>
-</head>
-<body>
-<!--Cree un Formulario con los campos que se proponen a continuacion-->
-<!--Agregue el atributo legend-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio Formulario</title>
+        <style>
+            form {
+                display: block;
+                margin-top: 0em;
+            }
+        </style>
+    </head>
+    <body>
+    <!--Cree un Formulario con los campos que se proponen a continuacion-->
+    <!--Agregue el atributo legend-->
 
-<!--Si tienes dudas de como hacer un formulario, puedes consultar:
-    https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
+    <!--Si tienes dudas de como hacer un formulario, puedes consultar:
+        https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
-<h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+    <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
+    <form name="formularioSuscripcion">
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+    <p>
+        <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+    </p>
 
-Agregue un comentario:
+    <p>
+       <label for="apellido"> Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" >
+    </p>
 
-Boton de Enviar
+    <p>
+        Sexo:<br>
+            <label for="masculino"> Masculino </label>
+        <input type="radio" name="genero" id="masculino" value="masuculino"><br>
+
+           <label for="femenino"> Femenino </label>
+        <input type="radio" name="genero" id="femenino" value="femenino"><br>
+
+          <label for="noRevelar">   Prefiero no revelarlo </label>
+        <input type="radio" name="genero" id="noRevelar" value="noRevelar"><br>
+    </p>
+
+    <p>
+        Edad:
+            <input type="number" name="edad" placeholder="Ingrese su edad">
+    </p>
+
+    <p>
+        <label for="edad">Email:</label>
+            <input type="email" name="email" id="edad" placeholder="email@dominio.com">
+    </p>
+
+    <p>
+        <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario" placeholder="Ingrese su nombre de usuario">
+    </p>
+
+    <p>
+        <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Ingrese su password">
+    </p>
+
+    <p>
+        <label for="password2"> Confirmar Password:</label>
+            <input type="password" name="password2" id="password2" placeholder="Ingrese su password">
+    </p>
+
+    <p>
+       <label for="tipoServicio"> Tipo de servicio:</label>
+            <select name="tipoServicio" id="tipoServicio">
+                <option value="free">Free</option>
+                <option value="free">Standard </option>
+                <option value="free">Premium</option>
+            </select>
+    </p>
+
+    <p>
+        <label for="tema">Tema:</label>
+        <select name="tema" id="tema">
+        <option value="politica">Política</option>
+        <option value="negocios">Negocios </option>
+        <option value="tecnologia">Tecnología</option>
+        <option value="salud">Salud</option>
+    </p>
+
+    <p>
+        <label for="comentario"> Agregue un comentario: </label>
+            <textarea id="comentario">Agregue un comentario...</textarea>
+    </p>
+
+    <p>
+        <button>
+            Boton de Enviar
+        </button>
+    </p>
+
+    </form>
 
 
-</body>
-</html>
+    </body>
+    </html>
