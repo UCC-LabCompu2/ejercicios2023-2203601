@@ -1,0 +1,23 @@
+
+div{
+    border: 2px solid #4aa6ee;
+    border-radius: 15px;
+    margin: 20px 25px;
+    padding: 18px;
+    background-color:rgba(52,52,117,0.2) ;
+    box-shadow: 5px 7px #1358e8;
+}
+#foto{
+    width:50px;
+    float: left;
+    border-radius: 100%;
+}
+.cuerpoPagina{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4289cc, #9eb1c5);
+}
+
+h1, h2, h3{
+    text-shadow: 2px 5px #1358e8;
+}
