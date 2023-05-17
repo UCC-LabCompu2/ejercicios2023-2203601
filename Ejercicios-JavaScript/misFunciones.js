@@ -1,9 +1,9 @@
 /**
- * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
- * @return Valor que retorna
+ * Conversion de unidades, de metros, yardas, pies y pulgadas.
+ * @method cambiarUnidades
+ * @param {string} id - El id de los inputs de metros, yardas, pies o pulgadas.
+ * @param {number} valor -  El valor de los inputs de metros, yardas, pies o pulgadas.
+ * @return
  */
 
 function cambiarUnidades(id, valor){
@@ -34,7 +34,7 @@ function cambiarUnidades(id, valor){
 
     }else if(id=="yarda"){
         document.lasUnidades.unid_metro.value = 0.9144 * valor;
-        document.lasUnidades.unid_pulgada.value = 36 * valor;
+        document.lasUnidades.unid_pulgada.value = 3.28084 * valor;
         document.lasUnidades.unid_pie.value = 3 * valor;
 
 
