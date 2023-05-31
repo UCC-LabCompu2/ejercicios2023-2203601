@@ -372,7 +372,29 @@ let animarAuto = () =>{
         x=0;
     }
 
+}
 
+var x=0;
+var dx=2;
+let animarAutoRequest = () => {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
 
+    const img = new Image();
+    img.src = "images/auto.png";
 
+    img.onload = function (){
+        canvas.width = canvas.width;
+        ctx.drawImage(img, x, 100);
+        requestAnimationFrame(animarAutoRequest);
+    }
+
+    if(x>canvas.width){
+        x=0;
+    }
+    x+=dx;
+}
+
+let animarNuevo = () => {
+    requestAnimationFrame(animarAutoRequest);
 }
